@@ -1,0 +1,93 @@
+var myField = document.getElementById("id you're trying to get");
+
+var tags = document.getElementsByTagName("li");
+	/*sets an array of all the elements selects for that tag
+	can call console.log(tags[index number of the list])
+
+.addEventListener	
+JS listens to these events:
+click
+submit
+focus
+blur
+change
+mouseover
+mouseout
+
+var changeborder = function (){
+	textfield.setAttribute("class", "hasFocus");
+	/*grab the attribute needed, so like class in the css file, or label and name of that class item
+var defaultborder = function () {
+	textfield.removeAttribute("class", "hasFocus);
+	}
+var textfield = document.getElementById("fieldselected");
+textfield.addEventListener("focus". changeborder0;
+search.addEventListener("click", changeBorder);
+	/*for clicking a button and applying a class
+	
+.createElement() would create tags or elements on a command
+var myList = document.createElement("html tag")
+
+to fil the tag created, you would use .appendChild()
+var myUlTag = document.createElement("ul");
+	/*need to target the div first so
+var myDiv - document.getElementById("divname")'
+myDiv.appendChild(the createElement item); 
+can append more and more and more into append.
+can append multiple items with a loop
+
+for(i=0; i<3; i++){
+	var liTag = document.createElement("li");
+	myUlTag.appendChild(liTag);
+}
+
+To apply the elements inside the tags you're crating, use the .innHTML property.
+/*
+var myUlTag = document.createElement("ul");
+var myDiv = document.getElementById("mainContent");
+var colors = [ "Red", "Orange", "Yellow", "Green", "Blue", "INdigo", "Violet"];
+for (i=0; j=colors.length; i=j; i++){
+	var liTag = document.createElement("li");
+	liTag.innerHTML = colors[i];
+	myUlTag.appendChild(liTag);
+}
+*/
+
+give attributes to items we create, co like naming a div or classes to p, etc, you'll use the .setAttribute() command
+using the example above, we'll alter the row of colors in the list, making the change before the page is  written
+setAttribute takes two values, the item you wnat to make such as class, name, etc and the name of the first vlaue
+/*
+var myUlTag = document.createElement("ul");
+var myDiv = document.getElementById("mainContent");
+var colors = [ "Red", "Orange", "Yellow", "Green", "Blue", "INdigo", "Violet"];
+for (i=0; j=colors.length; i=j; i++){
+	var liTag = document.createElement("li");
+	liTag.innerHTML = colors[i];
+	if(i%2 == 1){
+		liTag.setAttribute("class", "even");
+	}
+	myUlTag.appendChild(liTag);
+}
+*/
+
+in such instances, you might need to remove attributes after a scenario or only apply during a certain attribute added.
+you would use the .removeAttribute() method in this case.
+
+now to get the  input within an actual field, we'll use a .value element
+console.log(id of the field.value attribute INISDE the field of of the previous id);
+id.addEventListener("event", getValue);
+this usually works only for events that need change or blur.  for boxes and radios, we'll use the .checked property.
+/*
+var boxes = document.forms[0].steps;
+or
+var checkboxes - document.getElementById("formsid").steps;
+var getValue = function(){
+	for(i=0, j=checkboxes.length; i=j ; i++){
+		if(checkboxes[i].checked){
+			console.log(checkboxes[i].value);
+		}
+	}
+}
+submit.addEventListner("click", getValue);
+
+

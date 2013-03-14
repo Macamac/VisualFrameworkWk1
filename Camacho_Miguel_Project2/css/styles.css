@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* 
+Miguel Camacho
+VFW1 
+Project: Web App Part 2
+For Forms Project
+*/
+
+body {
+	background:url(../img/ret_back.png);
+	width: 480px;
+}
+h1 {
+	margin: 5px;
+	color:#FFF;
+	text-shadow:1px 1px #ddd, -1px 2px #222;
+	text-align:center;
+	font-size:24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: left;
+	color:#006;
+	margin: 0 0 0 15px;
+}
+#homecont{
+	overflow: auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+#appcont{
+	overflow: auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+#app_titlebar {
+	height:35px;
+	background: url(../img/tbar_back.png);
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border: 1px solid #aaa;
+}
+#home_p {
+	height:250px;
+	background: #fff;
+	border: 1px solid #aaa;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	
+}
+#home_add {
+	background: url(../img/tbar_back.png);
+	text-decoration: none;
+	height: 25px;
+	width: 140px;
+	margin: 0 0 0 15px;
+	padding: 5px 0 0 0;
+	color:#FFF;
+	text-shadow:1px 1px #ddd, -1px 0px #222;
+	text-align:center;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border: 1px solid #aaa;
+	
+}
+#home_add a {
+    color: #fff;
+    text-decoration: none;
+}
+#home_view {
+	background: url(../img/tbar_back.png);
+	text-decoration: none;
+	height: 25px;
+	width: 140px;
+	margin: -32px 0 0 170px;
+	padding: 5px 0 0 0;
+	color:#FFF;
+	text-shadow:1px 1px #ddd, -1px 0px #222;
+	text-align:center;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border: 1px solid #aaa;
+}
+#home_view a {
+    color: #fff;
+    text-decoration: none;
+}
+#home_clear {
+	background: url(../img/tbar_back.png);
+	text-decoration: none;
+	height: 25px;
+	width: 140px;
+	margin: -32px 0 0 325px;
+	padding: 5px 0 0 0;
+	color:#FFF;
+	text-shadow:1px 1px #ddd, -1px 0px #222;
+	text-align:center;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border: 1px solid #aaa;
+}
+#home_clear a {
+    color: #fff;
+    text-decoration: none;
+}
+form{
+	background: #FFF;
+	border: 1px solid #aaa;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    border: 1px solid #006;
+    background-color: rgba(0,102,255,0.5)
+}
+label.form {
+	width:150px;
+	margin:0 0 0 0px;
+	float:left;
+}
+textarea {
+	margin-left:40px;
+	
+}
+label.form1 {
+	width:150px;
+	margin:0 0 0 40px;
+	float:left;
+}
+ul { 
+	list-style: none; 
+}
+
+li { 
+	list-style: none; 
+}
+li.next1 { 
+	margin-left: 0 px; 
+}
+li.next2 {
+	margin-top:-57px;
+	margin-left:185px;
+	
+}
+li.next3 {
+	margin-top:0px;
+	margin-left:185px;
+	
+}
+li.next4 {
+	margin-top:0px;
+	margin-left:185px;
+	
+}
+#submitbutton{
+	text-align:center;
+}
+#sub_button {
+	background: url(../img/tbar_back.png);
+	text-decoration: none;
+	height: 30px;
+	width: 140px;
+	margin: inherit;
+	padding: 3px 0 0 0;
+	color:#FFF;
+	text-shadow:1px 1px #ddd, -1px 0px #222;
+	text-align:center;
+	font-size:16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+	border: 1px solid #aaa;
+}

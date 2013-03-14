@@ -8,27 +8,34 @@
     Work"/>
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="viewport" content="width=device-width; height=device-height"/>
+        <link href="css/styles.css" rel="stylesheet" />
     <title>Miguel Camacho Project 1 - Index.html</title>
 </head>
 <body>
-    	<h1>Incident Tickets Assistant</h1>
+	<div id="appcont">
+    	<div id="app_titlebar">
+    		<header>
+    			<h1>Incident Tickets Assistant</h1>
+    		</header>
+    	</div>
         <form action="" method="post">
-        	<fieldset>
+        	<br><fieldset>
             	<legend>Customer Summary</legend>
                 <ul>
-                    <li><label for="incno">Ticket INC0000</label><input type="text" id="incno" placeholder="123456"/></li>
-                    <li><label for="csite">Customer Site:</label><input type="text" id="csite" /></li>
-                    <li><label for="cname">Customer Name:</label><input type="text" id="cname" /></li>
+                    <li><label class="form" for="incno">Ticket INC0000</label><input type="text" id="incno" placeholder="123456"/></li>
+                    <li><label class="form" for="csite">Customer Site:</label><input type="text" id="csite" /></li>
+                    <li><label class="form" for="cname">Customer Name:</label><input type="text" id="cname" /></li>
                 </ul>
           	</fieldset>
+            <br>
           	<fieldset>
           		<legend>Case Summary</legend>
                 <ul>
-                	<li><label for="summ">Summary of Issue:</label><input type="text" id="summ" /></li>
-                    <li><label for="odate">Date Opened:</label><input type="date" id="odate" placeholder="3/7/13" /></li>
+                	<li><label class="form" for="summ">Summary of Issue:</label><input type="text" id="summ" size="40" /></li>
+                    <li><label class="form" for="odate">Date Opened:</label><input type="date" id="odate" placeholder="3/7/13" /></li>
                 </ul>
             	<li>
-                	<label for"pri">Priority:</label>
+                	<label class="form1" for"pri">Priority:</label>
                     <select id="pri">
                     	<option value="Low">Low</option>
                         <option value="Medium">Medium</option>
@@ -36,34 +43,35 @@
                         <option value="Critical">Critical</option>
                      </select>
                 </li>
-                <li>Pend case for:
+                <li><label class="form1">Pend case for:</label>
                 	<ul>
+                    <br>
                     	<li><input type="radio" checked value="24hours" id="24" name="pend" /><label for="24">24 Hours</label></li>
                         <li><input type="radio" value="48hours" id="48" name="pend" /><label for="48">2 Days</label></li>
                         <li><input type="radio" value="72hours" id="72" name="pend" /><label for="72">3 Days</label></li>
                     </ul>
-                 <li>Next Steps:
+                 <li><label class="form1">Next Steps:</label>
                  	<ul>
-                    	<li><input type="checkbox" value="Analyst action required" id="ns1" /><label for="ns1">Analyst action required</label></li>
-                        <li><input type="checkbox" value="Client action required" id="ns2" /><label for="ns2">Client action required</label></li>
-                        <li><input type="checkbox" value="Review logs" id="ns3" /><label for="ns3">Review logs</label></li>
-                        <li><input type="checkbox" value="Review dumps" id="ns4" /><label for="ns4">Review dumps</label></li>
-                        <li><input type="checkbox" value="Escalate issue" id="ns5" /><label for="ns5">Escalate issue</label></li>
-                        <li><input type="checkbox" value="Resolve issue" id="ns6" /><label for="ns6">Resolve issue</label></li>
+                      <br>
+                    	<li class="next1"><input type="checkbox" value="Analyst action required" id="ns1" name="steps" /><label for="ns1">Analyst action required</label></li>
+                        <li class="next1"><input type="checkbox" value="Client action required" id="ns2" name="steps" /><label for="ns2">Client action required</label></li>
+                        <li class="next1"><input type="checkbox" value="Review logs" id="ns3" name="steps" /><label for="ns3">Review logs</label></li>
+                        <li class="next2"><input type="checkbox" value="Review dumps" id="ns4" name="steps" /><label for="ns4">Review dumps</label></li>
+                        <li class="next3"><input type="checkbox" value="Escalate issue" id="ns5" name="steps" /><label for="ns5">Escalate issue</label></li>
+                        <li class="next4"><input type="checkbox" value="Resolve issue" id="ns6" name="steps" /><label for="ns6">Resolve issue</label></li>
              		</ul>
                	</li>
-                <li><label for="notes">Additional notes (Optional):</label><textarea id="notes"></textarea>
+                <li><label class="form1" for="notes">Additional notes (Optional):</label><br><br><textarea id="notes" cols="40" rows="5"></textarea>
                 </li>
                 <li><input type="hidden" value="validuser" /></li>
-            </fieldset>
-            <input type="submit" value="Add Ticket Entry" />
+            <br>
+            <div id="submitbutton"><input id="sub_button" type="submit" value="SUBMIT TICKET" /></div>
+            </fieldset><br>
+            <br>
+            	<div id="home_add"><a href="index.html">HOME</a></div>
+                <div id="home_view"><a href="#">VIEW TICKETS</a></div>
+                <div id="home_clear"><a href="#">CLEAR TICKETS</a></div><br><br>
         </form>
-       <br>
-       <footer>
-       		<a href="#">Display Enteries</a><br>
-            <a href="#">Clear All Enteries</a><br>
-            <a href="index.html">Home</a><br>
-       </footer>          
-
+	</div>        
 </body>
 </html>
